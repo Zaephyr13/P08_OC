@@ -9,7 +9,8 @@ import Footer from '../components/Footer'
 /** Pages */
 import ErrorPage from '../pages/ErrorPage'
 import HomePage from '../pages/HomePage'
-
+import ApartmentPage from '../pages/ApartmentPage'
+import AboutPage from '../pages/AboutPage'
 
 /** Template */
 const PageLayout = () => {
@@ -28,7 +29,13 @@ const PageLayout = () => {
 export const router = createBrowserRouter([
     {
         element: <PageLayout />,
-        errorElement: <ErrorPage />,
+        errorElement: (
+            <>
+                <Navbar />
+                <ErrorPage />
+                <Footer />
+            </>
+        ),
         children: [
             {
                 path: '/',
@@ -36,11 +43,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/apartment',
-                element: <h1>Nos Appartements</h1>,
+                element: <ApartmentPage />,
             },
             {
                 path: '/about',
-                element: <h1>À propos</h1>,
+                element: <AboutPage/>,
             },
         ],
     },

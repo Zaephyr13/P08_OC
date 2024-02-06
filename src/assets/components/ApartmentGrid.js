@@ -6,7 +6,7 @@ import ApartmentCard from './ApartmentCard'
 
 function ApartmentGrid() {
     return (
-        <div className='grid'>
+        <section className='grid'>
             <ApartmentCard />
             <ApartmentCard />
             <ApartmentCard />
@@ -16,7 +16,7 @@ function ApartmentGrid() {
             <ApartmentCard />
             <ApartmentCard />
             <ApartmentCard />
-        </div>
+        </section>
     )
 }
 
