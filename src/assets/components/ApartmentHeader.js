@@ -1,17 +1,16 @@
 import React from 'react'
 import '../sass/components/apartmentHeader.scss'
+import Tag from './Tag'
+import ApartmentTitle from './ApartmentTitle'
 
-function ApartmentHeader() {
+function ApartmentHeader({ title, location, tagArray }) {
     return (
         <div className='apartment-desc__header'>
-            <div className='apartment-desc__title'>
-                <h1>Cozy loft on the Canal Saint-Martin</h1>
-                <h2>Paris, Île-de-France</h2>
-            </div>
+            <ApartmentTitle title={title} location={location} />
             <div className='apartment-desc__tags'>
-                <div className='tag'>Cozy</div>
-                <div className='tag'>Canal</div>
-                <div className='tag'>Paris 10</div>
+                {tagArray.map((tag) => (
+                    <Tag tag={tag} key={tag} />
+                ))}
             </div>
         </div>
     )

@@ -1,42 +1,11 @@
 .apartment-desc__header {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     flex-grow: 1;
-}
-
-.apartment-desc__title {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    & h1 {
-        font-size: 36px;
-        font-weight: 500;
-        letter-spacing: 0em;
-        color: #FF6060;
-    }
-
-    & h2 {
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 0em;
-    }
 }
 
 .apartment-desc__tags {
     display: flex;
     gap: 10px;
-
-    & .tag {
-        width: 115px;
-        height: 25px;
-        border-radius: 10px;
-        background-color: #FF6060;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 25px;
-        text-align: center;
-        color: white;
-    }
 }

@@ -1,0 +1,27 @@
+.error-page-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 139px;
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+    color: #FF6060;
+    letter-spacing: 0em;
+    text-align: center;
+
+    & .error-number {
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    & .error-desc {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    & .error-link {
+        margin-bottom: 139px;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}

@@ -1,36 +1,35 @@
-.apartment-details {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.dropdown__desc {
+    margin-bottom: 30px;
+    width: 45%;
+    overflow: hidden;
 
-    &__desc {
-        width: 582px;
-
-        & .list-content {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            background-color: #F6F6F673;
-            border-radius: 5px;
-        }
+    & .list-content {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 20px;
+        background-color: #F6F6F673;
+        border-radius: 5px;
+        animation: slider 0.3s ease-in-out;
+        transform-origin: top;
     }
 
     & .title-arrow {
         display: flex;
+        justify-content: space-between;
         flex-wrap: nowrap;
-        width: fit-content;
+        width: 100%;
         padding: 10px 15px;
         background-color: #FF6060;
         border-radius: 5px;
 
         & .category {
-            width: 520px;
             height: 32px;
             font-size: 18px;
             font-weight: 700;
             line-height: 32px;
             text-align: left;
             color: white;
+
         }
 
         & i {
@@ -39,5 +38,15 @@
             line-height: 32px;
             color: white;
         }
+    }
+}
+
+@keyframes slider {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(100%);
     }
 }

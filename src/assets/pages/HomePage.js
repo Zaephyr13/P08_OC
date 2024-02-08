@@ -2,13 +2,13 @@
 import '../sass/pages/homePage.scss'
 
 /** Components */
-import Banner from '../components/Banner'
+import BannerText from '../components/BannerText'
 import AppartmentGrid from '../components/ApartmentGrid'
 
 const HomePage = () => {
     return (
         <>
-            <Banner />
+            <BannerText />
             <AppartmentGrid />
         </>
     )

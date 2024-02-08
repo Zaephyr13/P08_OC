@@ -1,20 +1,19 @@
 import React from 'react'
 import '../sass/components/host.scss'
+import Rating from './Rating'
 
-function Host() {
+function Host({name, picture, rating}) {
     return (
         <div className='apartment-host'>
             <div className='apartment-host__profile'>
-                <h3>Alexandre Dumas</h3>
-                <div className='apartment-host__badge'></div>
+                <h3>{name}</h3>
+                <img
+                    src={picture}
+                    alt="Portrait de l'hôte"
+                    className='apartment-host__badge'
+                />
             </div>
-            <div className='apartment-host__rating'>
-                <i className='fa-solid fa-star js-on'></i>
-                <i className='fa-solid fa-star js-on'></i>
-                <i className='fa-solid fa-star js-on'></i>
-                <i className='fa-solid fa-star'></i>
-                <i className='fa-solid fa-star'></i>
-            </div>
+            <Rating rating={rating}/>
         </div>
     )
 }
