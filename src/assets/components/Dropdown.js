@@ -12,7 +12,14 @@ function Dropdown({ type, category, content }) {
         <div className='dropdown__desc'>
             <div className='title-arrow'>
                 <h3 className='category'>{category}</h3>
-                <i className='fa-solid fa-chevron-up' onClick={showContent}></i>
+                <i
+                    className={
+                        isContentShown
+                            ? 'fa-solid fa-chevron-down'
+                            : 'fa-solid fa-chevron-up'
+                    }
+                    onClick={showContent}
+                ></i>
             </div>
             {isContentShown &&
                 (type === 'array' ? (

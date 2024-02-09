@@ -15,7 +15,7 @@ function ApartmentPage() {
     /** Get current apartment data */
     const location = useLocation()
     const [currentApartment, setCurrentApartment] = useState(null)
-    useEffect(getApartmentDetails, [])
+    useEffect(getApartmentDetails, [location.state])
     function getApartmentDetails() {
         fetch('db.json')
             .then((res) => res.json())
