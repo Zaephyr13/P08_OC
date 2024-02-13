@@ -1,6 +1,3 @@
-/** SCSS */
-import '../sass/pages/homePage.scss'
-
 /** Components */
 import BannerText from '../components/BannerText'
 import AppartmentGrid from '../components/ApartmentGrid'

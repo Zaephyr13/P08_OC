@@ -31,6 +31,9 @@ function Carrousel({ urlArray }) {
                 src={urlArray[currentPicture]}
                 alt='Apartment Cover'
             />
+            <p className='counter'>
+                {currentPicture+1}/{urlArray.length}
+            </p>
             <img
                 className='arrow arrow_left'
                 src='arrow_left.png'

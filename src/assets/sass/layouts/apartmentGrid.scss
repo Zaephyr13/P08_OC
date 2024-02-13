@@ -8,4 +8,9 @@
     border-radius: 25px;
     gap: 3rem;
     padding: 2rem;
+    @media screen and (width <=768px) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            background-color: white;
+        }
 }
